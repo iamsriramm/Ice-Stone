@@ -1,0 +1,298 @@
+
+body{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.men{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    
+}
+@keyframes colourss {
+0%{
+color:aqua;
+}
+20%{
+color:rgb(243, 105, 236);
+}
+40%{
+color:greenyellow;
+}
+60%{
+color:rgb(252, 18, 182)
+}
+80%{
+color:silver;
+}
+100%{
+color:rgb(243, 143, 89);
+}
+
+}
+h1{
+font-family: 'Nosifer', sans-serif;
+text-align: center;
+color:white;
+animation-name: colourss;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+animation-delay: 2s;
+animation-duration: 2s;
+}
+.mend{
+font-size: 20px;
+height: 20px;
+color: white;
+width:100px;
+text-decoration: underline;
+text-decoration-color: red;
+padding: 10px;
+text-align: center;
+padding-right: 5px;
+
+}
+.mend:hover{
+text-underline-offset: 10px;
+text-decoration-color: blue;
+text-decoration-style: wavy;
+cursor: pointer;
+
+
+}
+.quote{
+width:100%;
+height: 200px;
+border:2px solid gray;
+background-color:rgba(0,0,0,0.5);
+color:white;
+margin-top: 20px;
+text-align: center;
+vertical-align: center;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+#ice5{
+margin-left: 150px;
+animation-name: icee;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-direction: alternate-reverse;
+}
+
+@keyframes icee {
+0%{
+transform: rotateX(30deg);
+width: 120px;
+}
+40%{
+transform: rotateX(90deg);
+width: 150px;
+}
+80%{
+transform: rotateX(180deg);
+width: 200px;
+}
+100%{
+transform: rotateX(360deg);
+width: 500px;
+}
+
+}
+h2{
+font-family: 'Lobster', sans-serif;
+font-size: 30px;
+animation-name: shade;
+animation-timing-function: linear;
+animation-duration: 3s;
+animation-delay: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+}
+@keyframes shade {
+from{
+text-shadow: 10px 10px 5px rgba(250,250,250,1);
+}
+to{
+text-shadow: 10px 10px 10px rgba(0,0,0,1);
+}
+
+}
+.menucard{
+display: flex;
+flex-direction: row;
+background-color: rgba(0,0,0,0.5);
+}
+.icecream{
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+}
+#img1{
+margin-bottom: 20px;
+border-radius: 10px;
+}
+#img1{
+border-radius: 30px;
+box-shadow: 10px 10px 10px rgba(250,250,250,10.5);
+width: 300px;
+height:250px;
+}
+
+#card{
+background-color: black;
+font-size: 30px;
+margin-left: 200px;
+padding: 40px;
+color:white;
+margin-bottom: 8px;
+margin-top: 10px;
+border-radius: 20px;
+box-shadow: 10px 10px 10px rgba(250,250,250,10.5);
+transition: width 3s,background-color 2s;
+transition-timing-function: linear;
+border-style:inset outset inset outset;
+border-width:18px;
+border-color:white;
+}
+#card:hover{
+box-shadow: 10px 10px 10px(0,0,0,10.5);
+color:black;
+background-color: white;
+width:500px;
+cursor: pointer;
+align-items: center;
+
+}
+.conetype{
+transition: width 3s;
+}
+
+.cone{
+color:red;
+
+}
+#conetype:hover{
+color:white;
+background-color: black;
+margin-left: 50px;
+border-radius: 20px;
+}
+#flavor:hover{
+color:white;
+background-color: black;
+margin-left: 50px;
+border-radius: 20px;
+}
+#toppings:hover{
+color:white;
+background-color: black;
+margin-left: 50px;
+border-radius: 20px;
+}
+#toppings,#flavor,#conetype{
+transition: margin-left 2s;
+}
+
+.items{
+overflow-x: scroll;
+display: flex;
+flex-direction: row;
+margin-top: 20px;
+
+}
+#img1:hover{
+border-width:10px;
+border-style:inset outset inset outset;
+}
+.item2{
+margin-left: 25px;
+border: 2px solid black;
+border-radius: 20px;
+width: 200px;
+height:200px;
+object-fit: contain;
+background-color: white;
+
+
+}
+@keyframes borderr {
+0%{
+border-color:deeppink blue blue blue;
+
+}
+40%{
+border-color:blue deeppink blue blue;
+}
+70%{
+border-color:blue blue deeppink blue;
+}
+100%{
+border-color:blue blue blue deeppink;
+}
+
+}
+.item2:hover{
+box-shadow: 10px 10px 10px rgba(0,0,0,1);
+width:200px;
+box-shadow: 10px 10px 10px rgba(250,250,250,10.5);
+border-style: solid;
+border-width: 10px;
+border-color: black;
+animation-name: borderr;
+animation-duration: 2s;
+animation-delay: 0s;
+animation-direction:normal;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+.icecream{
+margin-left: 20px;
+}
+#price{
+background-color: white;
+}
+.mycart{
+display: flex;
+flex-direction: row;
+margin-left: 40px;
+}
+.tag{
+margin-left: 30px;
+font-size: 16px;
+}
+@media screen and (max-width:500px){
+.menucard{
+display:flex;
+flex-direction:column;
+}
+#card{
+margin-left:1px;
+font-size:18px;
+width:180px;
+}
+h2{
+font-size:15px;
+}
+#ice5{
+width:1px;
+
+}
+#card:hover{
+width:240px;
+}
+.item2{
+width:150px;
+height:150px;
+}
+
+}
+h3{
+display: inline;
+
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes colours {
+           0%{
+            border-color:blue deeppink deeppink deeppink;
+           } 
+           30%{border-color: deeppink blue deeppink deeppink}
+           60%{border-color: deeppink deeppink blue deeppink}
+           100%{border-color: deeppink deeppink deeppink blue}
+        }
+     table{
+     
+        border: 2px solid black;
+        align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 70px;
+        background-color: cyan;
+       border-style: inset outset inset outset;
+       animation-name: colours;
+       animation-delay: 0s;
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+       animation-direction: normal;
+       animation-timing-function: linear;
+       border-width: 20px;
+       background-size: cover;
+       }
+       tr,td,table{
+        padding: 20px;
+       }
+       td{
+        font-weight: bold;
+        font-size:20px;
+
+       }
+
+       body{
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+ 
+    </style>
+</head>
+<body background="img/ice11.png">
+    <h1>Sign Up</h1>
+<table>
+    <tr>
+        <td>Enter Email:</td><td><input type="email"></td>
+    </tr>
+    <tr>
+        <td>Enter password:</td><td><input type="password"></td>
+    </tr>
+    <tr>
+        <td>Confirm password:</td><td><input type="password"></td>
+    </tr>
+    <tr><td></td><td><button>Submit</button></td></tr>
+</table>
+</body>
+</html>
